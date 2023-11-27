@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addproduct.AddProductActivity">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp"
+        android:fitsSystemWindows="true" >
+
+        <ImageView
+            android:id="@+id/add_product_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:scaleType="fitXY"
+            android:fitsSystemWindows="true"
+            app:srcCompat="@drawable/ic_image_hint" />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_192sdp"
+        android:background="@drawable/add_product_shape">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/_94sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/main_line_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/add_product_btn_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/add_product_btn_add_image"
+            android:textAllCaps="false"
+            android:textColor="@color/blue_start"
+            app:icon="@drawable/ic_baseline_image"
+            app:iconTint="@color/blue_start"
+            app:strokeColor="@color/blue_center"
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_61sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/add_product_et_product_name"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_product_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_123sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/add_product_et_model_number"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_product_et_model_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            style="@style/CustomTextInputEditText"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_184sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:hint="@string/add_product_et_buying_price"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_product_et_buying_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_184sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/add_product_et_selling_price"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_product_et_selling_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="@dimen/_123sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_246sdp"
+            android:hint="@string/add_product_et_number_of_pieces"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_product_et_number_of_pieces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_product_fab_plus"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginTop="@dimen/_251sdp"
+            android:layout_marginStart="@dimen/_31sdp"
+            app:backgroundTint="@color/blue_start"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_product_fab_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_251sdp"
+            android:layout_marginEnd="@dimen/_31sdp"
+            app:backgroundTint="@color/blue_start"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/add_product_btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_23sdp"
+            android:text="@string/add_product_btn_save"
+            android:textSize="@dimen/_12ssp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            app:backgroundTint="@color/blue_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

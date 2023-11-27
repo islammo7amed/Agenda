@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Agenda</string>
+
+    // Add Product Activity
+    <string name="add_product_btn_add_image">Add Image</string>
+    <string name="add_product_et_product_name">Product name</string>
+    <string name="add_product_et_model_number">Model number</string>
+    <string name="add_product_et_buying_price">Buying Price</string>
+    <string name="add_product_et_selling_price">Selling Price</string>
+    <string name="add_product_et_number_of_pieces">Number of pieces</string>
+    <string name="add_product_btn_save">Save</string>
+    <string name="add_product_btn_update">Update</string>
+    <string name="add_product_toast_enter_data">Please enter all data</string>
+    <string name="add_product_toast_product_updated">Product updated</string>
+    <string name="add_product_toast_product_inserted">Product inserted</string>
+
+    // Main Activity
+    <string name="main_tv_home">Home</string>
+    <string name="main_tv_customers">Customers</string>
+    <string name="main_tv_sales">Sales</string>
+    <string name="main_tv_statistics">Statistics</string>
+
+    // Customers Fragment
+    <string name="customers_tab_debts">Debts</string>
+    <string name="customers_tab_all_customers">All customers</string>
+    <string name="customers_debts_et_refund">Refund</string>
+    <string name="all_customers_toast_not_deleted">This customer cannot be deleted</string>
+    <string name="all_customers_toast_deleted">Customer deleted</string>
+
+    // Customer Fragment
+    <string name="customer_auto_complete_customer_type">Customer Type</string>
+    <string name="customer_auto_complete_select_customer">Select Customer</string>
+    <string name="customer_et_customer_name">Customer name</string>
+    <string name="customer_et_date_of_buying">Date of buying</string>
+    <string name="customer_btn_next">Next</string>
+    <string name="customer_type_new">New Customer</string>
+    <string name="customer_type_exist">Existing Customer</string>
+    <string name="customer_toast_select_item">Please select item</string>
+
+    // Invoice Activity
+    <string name="invoice_tool_bar_title">Invoice</string>
+
+    // End Invoice Activity
+    <string name="end_invoice_tv_total">Total</string>
+    <string name="end_invoice_et_cash_paid">Cash Paid</string>
+    <string name="end_invoice_et_discount">Discount</string>
+</resources>

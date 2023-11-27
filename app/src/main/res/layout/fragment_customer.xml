@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.invoice.CustomerFragment">
+
+    <TextView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_74sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:background="@drawable/invoice_slide_line_small_selected_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_tv_circle_one"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginStart="@dimen/_73sdp"
+        android:background="@drawable/invoice_slide_selected_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_tv_line_one"
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_74sdp"
+        android:layout_marginStart="@dimen/_93sdp"
+        android:background="@drawable/invoice_slide_line_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_tv_circle_two"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginStart="@dimen/_147sdp"
+        android:background="@drawable/invoice_slide_not_selected_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_tv_line_two"
+        android:layout_width="@dimen/_74sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_74sdp"
+        android:layout_marginStart="@dimen/_167sdp"
+        android:background="@drawable/invoice_slide_line_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/customer_tv_circle_three"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginStart="@dimen/_222sdp"
+        android:background="@drawable/invoice_slide_not_selected_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_tv_line_three"
+        android:layout_width="@dimen/_23sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_74sdp"
+        android:layout_marginStart="@dimen/_242sdp"
+        android:background="@drawable/invoice_slide_line_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/invoice_auto_complete_customer_type_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/customer_auto_complete_customer_type"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu" >
+
+            <AutoCompleteTextView
+                android:id="@+id/invoice_auto_complete_customer_type_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                style="@style/CustomTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/invoice_auto_complete_customer_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/customer_auto_complete_select_customer"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu" >
+
+            <AutoCompleteTextView
+                android:id="@+id/invoice_auto_complete_customer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                style="@style/CustomTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customer_til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/customer_et_customer_name"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/customer_til_date_of_buying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:hint="@string/customer_et_date_of_buying"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_baseline_calendar_month"
+            app:hintTextColor="@color/blue_start"
+            app:boxStrokeColor="@color/blue_start"
+            app:boxCornerRadiusTopStart="@dimen/_21sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_et_date_of_buying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                style="@style/CustomTextInputEditText"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customer_rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_307sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:clipToPadding="false"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/customer_btn_next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/customer_btn_next"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward"
+        app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

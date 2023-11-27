@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أجندة</string>
+
+    // Add Product Activity
+    <string name="add_product_btn_add_image">إضافة صورة</string>
+    <string name="add_product_et_product_name">اسم المنتج</string>
+    <string name="add_product_et_model_number">رقم الموديل</string>
+    <string name="add_product_et_buying_price">سعر الشراء</string>
+    <string name="add_product_et_selling_price">سعر البيع</string>
+    <string name="add_product_et_number_of_pieces">عدد القطع</string>
+    <string name="add_product_btn_save">حفظ</string>
+    <string name="add_product_btn_update">تعديل</string>
+    <string name="add_product_toast_enter_data">من فضلك أدخل جميع البيانات</string>
+    <string name="add_product_toast_product_updated">تم تعديل المنتج</string>
+    <string name="add_product_toast_product_inserted">تم إضافة المنتج</string>
+
+    // Main Activity
+    <string name="main_tv_home">الرئيسية</string>
+    <string name="main_tv_customers">عملاء</string>
+    <string name="main_tv_sales">مبيعات</string>
+    <string name="main_tv_statistics">احصائيات</string>
+
+    // Customers Fragment
+    <string name="customers_tab_debts">ديون</string>
+    <string name="customers_tab_all_customers">جميع العملاء</string>
+    <string name="customers_debts_et_refund">استرداد</string>
+    <string name="all_customers_toast_not_deleted">لا يمكن حذف هذا العميل</string>
+    <string name="all_customers_toast_deleted">تم حذف العميل</string>
+
+    // Customer Fragment
+    <string name="customer_auto_complete_customer_type">نوع العميل</string>
+    <string name="customer_auto_complete_select_customer">اختر العميل</string>
+    <string name="customer_et_customer_name">اسم العميل</string>
+    <string name="customer_et_date_of_buying">تاريخ الشراء</string>
+    <string name="customer_btn_next">التالى</string>
+    <string name="customer_type_new">عميل جديد</string>
+    <string name="customer_type_exist">عميل موجود</string>
+    <string name="customer_toast_select_item">من فضلك اختر عنصر</string>
+
+    // Invoice Activity
+    <string name="invoice_tool_bar_title">فاتورة</string>
+
+    // End Invoice Activity
+    <string name="end_invoice_tv_total">الاجمالى</string>
+    <string name="end_invoice_et_cash_paid">دفع</string>
+    <string name="end_invoice_et_discount">خصم</string>
+</resources>

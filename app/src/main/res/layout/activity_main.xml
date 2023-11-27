@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_63sdp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/blue_start"
+        app:elevation="@dimen/_22sdp"
+        app:fabCradleMargin="@dimen/_11sdp"
+        app:fabCradleRoundedCornerRadius="@dimen/_15sdp"
+        app:fabAlignmentMode="center"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_tv_home"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_tv_home"
+                android:clickable="true"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:drawableTop="@drawable/ic_baseline_home"/>
+            <TextView
+                android:id="@+id/main_tv_customers"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_tv_customers"
+                android:clickable="true"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:drawableTop="@drawable/ic_baseline_supervisor_account"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/main_tv_sales"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_tv_sales"
+                android:clickable="true"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:drawableTop="@drawable/ic_sales"/>
+            <TextView
+                android:id="@+id/main_tv_statistics"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/main_tv_statistics"
+                android:clickable="true"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:drawableTop="@drawable/ic_baseline_bar_chart"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/blue_start"
+        app:tint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_add"
+        app:layout_anchor="@id/bottomAppBar"
+        />
+
+    <TextView
+        android:layout_width="@dimen/_94sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/main_line_shape"
+        android:layout_gravity="bottom|center"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

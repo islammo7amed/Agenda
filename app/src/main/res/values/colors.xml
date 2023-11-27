@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#079893</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue_start">#079893</color>
+    <color name="blue_center">#077B94</color>
+    <color name="blue_end">#09537D</color>
+    <color name="shopping_color">#F9A200</color>
+    <color name="product_color_white">#F2F2F2</color>
+    <color name="product_color_">#B6B7B7</color>
+    <color name="blue_start__">#7AA09F</color>
+    <color name="blue_start_">#DAEAFD</color>
+
+    <color name="line_color">#4A4B4D</color>
+
+    <color name="purple_5000">#FF6200EE</color>
+    <color name="purple_7000">#FF3700B3</color>
+
+    <color name="end_invoice_products_color">#F6F6F6</color>
+    <color name="end_invoice_line_color">#1A707070</color>
+    <color name="end_invoice_image_color">#B0D2D0</color>
+
+
+    <color name="blue_startt">#B0D2D0</color>
+
+</resources>

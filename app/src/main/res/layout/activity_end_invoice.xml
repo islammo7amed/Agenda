@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.invoice.EndInvoiceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/ToolBarStyle"
+        android:id="@+id/end_invoice_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46sdp"
+        android:background="@color/blue_start"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_63sdp"
+        android:outlineProvider="none"
+        android:layout_marginTop="@dimen/_87sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame_image"
+                android:layout_width="@dimen/_63sdp"
+                android:layout_height="match_parent"
+                android:background="@color/end_invoice_image_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/image_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ic_end_invoice_customer" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/end_invoice_customer_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:textColor="@color/line_color"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/frame_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_date"
+                android:layout_width="@dimen/_11sdp"
+                android:layout_height="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toEndOf="@+id/frame_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_calendar_month" />
+
+            <TextView
+                android:id="@+id/end_invoice_customer_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textColor="@color/product_color_"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintStart_toEndOf="@+id/image_date"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_debt"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_48sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toEndOf="@+id/frame_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_end_invoice_credit_card" />
+
+            <TextView
+                android:id="@+id/end_invoice_customer_tv_debt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_47sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textColor="@color/product_color_"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toEndOf="@+id/image_debt"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/end_invoice_rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="@dimen/_226sdp"
+        android:layout_marginTop="@dimen/_175sdp"
+        android:background="@color/end_invoice_products_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_421sdp"
+        android:text="@string/end_invoice_tv_total"
+        android:textColor="@color/line_color"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/end_invoice_tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_416sdp"
+        android:textColor="@color/blue_start"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="@dimen/_123sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_84sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:hint="@string/end_invoice_et_cash_paid"
+        app:hintTextColor="@color/blue_start"
+        app:boxStrokeColor="@color/blue_start"
+        app:boxCornerRadiusTopStart="@dimen/_21sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+        app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/end_invoice_et_cash_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            style="@style/CustomTextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="@dimen/_123sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_84sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:hint="@string/end_invoice_et_discount"
+        app:hintTextColor="@color/blue_start"
+        app:boxStrokeColor="@color/blue_start"
+        app:boxCornerRadiusTopStart="@dimen/_21sdp"
+        app:boxCornerRadiusTopEnd="@dimen/_21sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_21sdp"
+        app:boxCornerRadiusBottomEnd="@dimen/_21sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/end_invoice_et_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            style="@style/CustomTextInputEditText"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/end_invoice_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_23sdp"
+        android:text="@string/add_product_btn_save"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+        app:backgroundTint="@color/blue_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="@dimen/_94sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@drawable/main_line_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

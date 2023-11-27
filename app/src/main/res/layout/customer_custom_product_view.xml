@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_custom_cv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    app:cardElevation="@dimen/_4sdp" >
+
+    <ImageView
+        android:id="@+id/customer_custom_iv"
+        android:layout_width="@dimen/_76sdp"
+        android:layout_height="@dimen/_76sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:scaleType="centerCrop" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_78sdp" >
+
+        <TextView
+            android:id="@+id/customer_custom_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:textColor="@color/line_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/customer_custom_tv_pieces"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/line_color"
+            android:background="@drawable/customer_custom_product_edit_text_shape"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/customer_custom_et_pieces"
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:background="@drawable/customer_custom_product_edit_text_shape"
+            android:inputType="number"
+            android:visibility="gone"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/line_color"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/customer_custom_tv_pieces"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <CheckBox
+            android:id="@+id/customer_custom_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
